@@ -17,6 +17,7 @@
 		242749C72B0EE99800D5CBC3 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242749C62B0EE99800D5CBC3 /* ImageLoader.swift */; };
 		242749CA2B0EE9D900D5CBC3 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242749C92B0EE9D900D5CBC3 /* ImageCache.swift */; };
 		242749CC2B0EEA1400D5CBC3 /* CachableRemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242749CB2B0EEA1400D5CBC3 /* CachableRemoteImage.swift */; };
+		242749CE2B0F21E600D5CBC3 /* DictionaryVsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242749CD2B0F21E600D5CBC3 /* DictionaryVsCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		242749C62B0EE99800D5CBC3 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		242749C92B0EE9D900D5CBC3 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		242749CB2B0EEA1400D5CBC3 /* CachableRemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachableRemoteImage.swift; sourceTree = "<group>"; };
+		242749CD2B0F21E600D5CBC3 /* DictionaryVsCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryVsCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				242749C92B0EE9D900D5CBC3 /* ImageCache.swift */,
+				242749CD2B0F21E600D5CBC3 /* DictionaryVsCache.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				2404124E2B0DF3100083116B /* ContentView.swift in Sources */,
 				2404124C2B0DF3100083116B /* ImageCachingApp.swift in Sources */,
 				242749CA2B0EE9D900D5CBC3 /* ImageCache.swift in Sources */,
+				242749CE2B0F21E600D5CBC3 /* DictionaryVsCache.swift in Sources */,
 				242749CC2B0EEA1400D5CBC3 /* CachableRemoteImage.swift in Sources */,
 				242749C72B0EE99800D5CBC3 /* ImageLoader.swift in Sources */,
 			);
