@@ -1,12 +1,36 @@
-# Git Repository Template
+# image-caching-swiftui
 
-Project repository template to set up all public projects at [Nimble](https://nimblehq.co/)
+<p align="center">
+  <img alt="Nimble logo" src="https://assets.nimblehq.co/logo/light/logo-light-text-320.png" />
+</p>
+
+<p align="center">
+  <strong>Image Caching SwiftUI</strong>
+</p>
+
+---
+
+A project for showcasing how to implement a cachable remote image view with NSCache in SwiftUI.
 
 ## Usage
 
-Clone the repository
+- Clone the project
 
-`git clone git@github.com:nimblehq/git-template.git`
+  ```bash
+  $ git clone https://github.com/nimblehq/image-caching-swiftui.git
+  ```
+
+- Navigate to the project directory
+
+  ```bash
+  $ cd map-sdk-swiftui-ios/ImageCaching/
+  ```
+
+- Run the project
+
+  ```bash
+  open ImageCaching.xcodeproj
+  ```
 
 ## License
 
