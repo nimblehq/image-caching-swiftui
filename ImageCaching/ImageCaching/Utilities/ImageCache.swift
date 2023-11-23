@@ -15,7 +15,9 @@ class ImageCache {
 
     private init() {
         cache.countLimit = 100
-        cache.totalCostLimit = 1024 * 1024 * 100
+        cache.totalCostLimit = 1024 * 1024 * 5
+//        cache.countLimit = 2
+//        cache.totalCostLimit = 1024 * 1024 * 1
     }
 
     func set(_ image: UIImage, forKey key: String) {

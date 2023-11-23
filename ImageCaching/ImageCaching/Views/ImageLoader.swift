@@ -22,6 +22,7 @@ class ImageLoader: ObservableObject {
     private func loadImage() {
         if let cachedImage = ImageCache.shared.get(forKey: url) {
             self.image = cachedImage
+            print("show cache image: \(url)")
             return
         }
 
@@ -33,7 +34,11 @@ class ImageLoader: ObservableObject {
             DispatchQueue.main.async {
                 let image = UIImage(data: data)
                 self.image = image
+                print("show remote image: \(url)")
                 ImageCache.shared.set(image!, forKey: self.url)
+//                let bytes = data.count
+//                print("show remote image: \(url), bytes: \(bytes)")
+//                ImageCache.shared.set(image!, forKey: self.url, cost: bytes)
             }
         }
         task?.resume()
