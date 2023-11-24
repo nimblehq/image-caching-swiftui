@@ -14,8 +14,11 @@ class ImageCache {
     private let cache = NSCache<NSString, UIImage>()
 
     private init() {
+        // Test case #1: Image caching with full limits
         cache.countLimit = 100
         cache.totalCostLimit = 1024 * 1024 * 5
+
+        // Test case #1: Image caching with insufficient items/costs
 //        cache.countLimit = 2
 //        cache.totalCostLimit = 1024 * 1024 * 1
     }

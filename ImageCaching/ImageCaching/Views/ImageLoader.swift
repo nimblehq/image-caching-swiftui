@@ -34,11 +34,14 @@ class ImageLoader: ObservableObject {
             DispatchQueue.main.async {
                 let image = UIImage(data: data)
                 self.image = image
-                print("show remote image: \(url)")
-                ImageCache.shared.set(image!, forKey: self.url)
-//                let bytes = data.count
-//                print("show remote image: \(url), bytes: \(bytes)")
-//                ImageCache.shared.set(image!, forKey: self.url, cost: bytes)
+                // Test case #1: without cost param
+//                print("show remote image: \(url)")
+//                ImageCache.shared.set(image!, forKey: self.url)
+
+                // Test case #2: with cost param
+                let bytes = data.count
+                print("show remote image: \(url), bytes: \(bytes)")
+                ImageCache.shared.set(image!, forKey: self.url, cost: bytes)
             }
         }
         task?.resume()

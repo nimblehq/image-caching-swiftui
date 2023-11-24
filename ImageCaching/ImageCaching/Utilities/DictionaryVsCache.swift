@@ -26,7 +26,7 @@ class DictionaryVsCache {
         // mutableDict.setObject("two", forKey: dicKey) copies dicKey into a new key object K₄; K₂ is left alone
         mutableDict.setObject("two", forKey: dicKey) // K₄
 
-        // => The dictionary contains K₂ and K₄, while dicKey points to K₃, K₁ is deallocated
+        // => The dictionary contains K₂ and K₄, while dicKey points to K₃. K₁ is deallocated
     }
 
     // MARK: - CACHE
